@@ -1,0 +1,22 @@
+/* You can not modify anything in the HTML */
+/* You can only modify the CSS file */
+body{
+    background-color: black;
+    color: #ffffff;
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar > img{
+    height: 100px;
+}
+.list{
+    display: flex;
+    list-style-type: none;
+}
+
+.hero{
+    background-image: url("./assets/bg.png");
+}

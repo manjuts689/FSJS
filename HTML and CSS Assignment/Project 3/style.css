@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(102, 54, 54);
+    color: #FFFFFF;
+}
+
+.leftsection{
+    background-color: black;
+    width: 5%;
+    left: 50px;
+}
+.rightsection{
+    background-color: black;
+}

@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 1440px;
+    background-color: #F0F4F5;
+    margin: auto;
+    overflow: hidden;
+}
+
+nav{
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1%;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    
+}
+nav ul li{
+    list-style: none;
+    margin-right: 50px;
+    font-weight: 600;
+    font-size: 25px;
+}
+nav ul li:first-child{
+    color:  #42af66;
+}
+
+/* Hero section */
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+}
+
+main section {
+    width: 50%;
+}
+
+.leftsection{
+    margin-left: 5%;
+    position: relative;
+}
+
+.topangle{
+    width: 25px;
+}
+
+.leftsection h1{
+    font-size: 90px;
+}
+
+.leftsection p{
+    color:  #808080;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.bottomangle{
+    width: 25px;
+    position: absolute;
+    right: 25px;
+}
+
+.stethoscope{
+    position: absolute;
+    width: 90%;
+    top: -60px;
+    right: -25px;
+    z-index: -1;
+}
+
+.mouse{
+    position: absolute;
+    right: -30px;
+    bottom: 0;
+    width: 30px;
+}
+
+.leftsection button{
+    color: white;
+    background-color: #42af66;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 40px;
+    font-size: 25px;
+}
+
+/* right section */
+.greenbox, .yellowbox{
+    position: absolute;
+    right: 0;
+}
+
+.greenbox{
+    width:32%;
+    bottom: 48px;
+    right: 20px;
+}
+
+.yellowbox{
+    width:28%;
+    bottom: 90px;
+}
+.doctor{
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    height: 90%;
+}
