@@ -1,22 +1,86 @@
 /* You can not modify anything in the HTML */
 /* You can only modify the CSS file */
-body{
-    background-color: black;
+*{
+    margin: 0;
+    padding: 0;
     color: #ffffff;
 }
 
-.navbar{
-    display: flex;
+body{
+    max-width: 1440px;
+    margin: auto;
 }
 
-.navbar > img{
-    height: 100px;
-}
-.list{
+nav{
+    height: 10vh;
     display: flex;
-    list-style-type: none;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: black;
 }
 
+.navbar img{
+    width: 100px;
+}
+
+.line{
+    border-right: 1px solid #ffffff;
+    height: 50px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+nav ul li{
+    list-style: none;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+button{
+    background-color: #b024ae;
+    border: none;
+}
+
+nav button{
+    position: relative;
+    height: 40px;
+    width: 150px;
+    border-radius: 7px;
+    font-size: 16px;
+    left: 200px;
+    font-family: sans-serif;
+}
 .hero{
-    background-image: url("./assets/bg.png");
+    background: url("./assets/bg.png");
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-left: 28%;
+    padding-right: 15%;
+    font-family: sans-serif;
+}
+
+.hero-heading{
+    font-size: 80px;
+}
+.hero-description{
+    font-size: 27px;
+}
+
+.button-large{
+    height: 80px;
+    width: 320px;
+    border-radius: 10px;
+    font-size: 28px;
+    margin-top: 40px;
+    padding: 10px 5px;
 }
