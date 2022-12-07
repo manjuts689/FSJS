@@ -33,8 +33,9 @@ nav ul{
 nav ul li{
     list-style: none;
     margin-right: 50px;
-    font-size: 20px;
-    color: gray;
+    font-size: 15px;
+    color: #a19e9e;
+    font-family: sans-serif;
 }
 
 nav ul li button{
@@ -67,7 +68,8 @@ main{
 }
 
 .leftsection h1{
-    font-size: 90px;
+    font-size: 80px;
+    font-family: sans-serif;
 }
 .rightsection p{
     font-size: 25px;

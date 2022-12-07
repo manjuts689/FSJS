@@ -14,8 +14,12 @@ nav{
     height: 15vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 0 5%;
+}
+
+nav img{
+    height: 40px;
 }
 
 nav ul{
@@ -23,15 +27,16 @@ nav ul{
     align-items: center;
     justify-content: flex-start;
     gap: 10px;
-    margin-right: 80px;
+    margin-left: 80px;
+    margin-right: 360px;
 }
 
 nav ul li {
     list-style: none;
     margin-right: 30px;
     font-weight: 600;
-    font-size: 22px;
-    color: #828585d2;
+    font-size: 20px;
+    color: #c5cacad2;
 }
 
 .list-item:first-child{
