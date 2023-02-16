@@ -12,9 +12,9 @@ The user has to append a new element in the navigation menu named **"Hire Me"** 
 
 ### **Project Solution**
 ```js
-var ElementLi = document.createElement("li");
+let ElementLi = document.createElement("li");
 ElementLi.innerHTML = "<a>Hire Me</a>";
-var Parent = document.querySelector("header nav ul");
+let Parent = document.querySelector("header nav ul");
 Parent.appendChild(ElementLi);
 ```
 ---
@@ -28,7 +28,7 @@ The user needs to change the placeholder message to **"Search My Project"** afte
 
 ### **Project Solution**
 ```js
-var Element = document.querySelector(".search-field input");
+let Element = document.querySelector(".search-field input");
 Element.placeholder = "Search My Project";
 ```
 ---
@@ -42,7 +42,7 @@ The user has to change **"a Freelancer"** to **"an Employee"** and **"National a
 
 ### **Project Solution**
 ```js
-var Element = document.querySelectorAll(".hero-left-section p span");
+let Element = document.querySelectorAll(".hero-left-section p span");
 Element[1].innerText = "an Employee";
 Element[2].innerText = "iNeuron Intelligence Pvt Ltd";
 ```
@@ -57,7 +57,7 @@ The user has to replace **"Avtar"** image with **"Hitesh Sir"** image.
 
 ### **Project Solution**
 ```js
-var Element = document.querySelector(".hero-right-section img");
+let Element = document.querySelector(".hero-right-section img");
 Element.src="./Hitesh.jpeg";
 ```
 ---
@@ -71,8 +71,8 @@ The user has to change **"Support Me"** button and move it beside the **"Chat Wi
 
 ### **Project Solution**
 ```js
-var Parent = document.querySelector(".hero-right-section-btns");
-var NewBtn = document.createElement("button");
+let Parent = document.querySelector(".hero-right-section-btns");
+let NewBtn = document.createElement("button");
 NewBtn.innerText = "Support Me";
 Parent.appendChild(NewBtn);
 ```
@@ -92,9 +92,9 @@ The user has to change color of all headers to **"#dadaf8"** and display sibling
 
 ### **Project Solution**
 ```js
-var Header = document.querySelectorAll(".accordian h3");
+let Header = document.querySelectorAll(".accordian h3");
 Header.forEach((element)=>{element.style.backgroundColor = "#dadaf8"})
-var Para = document.querySelectorAll(".accordian p");
+let Para = document.querySelectorAll(".accordian p");
 Para[2].style.display = "block";
 Para[3].style.display = "block";
 ```
@@ -109,11 +109,11 @@ The user needs to add new element with Header as **"Skills"** and Paragragh. Cha
 
 ### **Project Solution**
 ```js
-var Element = document.createElement("div");
+let Element = document.createElement("div");
 Element.className = "accordian";
-var Header = document.createElement("h3");
+let Header = document.createElement("h3");
 Header.innerText = "Skills";
-var Paragraph = document.createElement("p");
+let Paragraph = document.createElement("p");
 Paragraph.innerText = "I posses a very good command over the Full Stack Development technologies like MERN which can be seen in my work over the Github.";
 Paragraph.style.display = "block";
 Element.appendChild(Header)
@@ -139,6 +139,20 @@ The user has to change color of all headers to **"#dadaf8"** and display sibling
 
 ### **Project Solution**
 ```js
+let MyForm = document.querySelectorAll("form");
+MyForm[1].addEventListener("submit",(event)=>{
+    event.preventDefault();
+    let InputUserName = document.querySelector(".userName");
+    let InputEmail = document.querySelector(".userEmail");
+    let InputMessage = document.querySelector(".userMessage");
+    
+    let OutputUserName = document.querySelector(".enterName");
+    let OutputEmail = document.querySelector(".enterMail");
+    let OutputMessage = document.querySelector(".enterMessage");
 
+    OutputUserName.value = InputUserName.value;
+    OutputEmail.value = InputEmail.value;
+    OutputMessage.value = InputMessage.value;
+})
 ```
 ---
