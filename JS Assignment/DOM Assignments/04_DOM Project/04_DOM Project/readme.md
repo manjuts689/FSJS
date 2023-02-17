@@ -1,5 +1,5 @@
 # ** DOM Assignment 4**
->**Note**: You have to completed all the given task on the home page of the website.
+>**Note**: You have to completed all the given task
 
 ---
 
